@@ -13,7 +13,8 @@ export default defineConfig({
       { text: '指南', link: '/guide/getting-started' },
       { text: '配置', link: '/configuration/client-profile' },
       { text: '开发', link: '/development/architecture' },
-      { text: '发布', link: '/deployment/build-release' }
+      { text: '发布', link: '/deployment/build-release' },
+      { text: '关于', link: '/about' }
     ],
     sidebar: [
       {
@@ -48,6 +49,12 @@ export default defineConfig({
           { text: '扩展开发', link: '/development/extensions' },
           { text: '限制与路线图', link: '/development/limitations' }
         ]
+      },
+      {
+        text: '项目与作者',
+        items: [
+          { text: '关于 MatrixLauncher', link: '/about' }
+        ]
       }
     ],
     socialLinks: [
@@ -55,7 +62,7 @@ export default defineConfig({
     ],
     footer: {
       message: '基于 Apache License 2.0 发布',
-      copyright: 'Copyright © 2026 ewsk233'
+      copyright: 'Copyright © 2026 ewsk'
     },
     search: {
       provider: 'local'
