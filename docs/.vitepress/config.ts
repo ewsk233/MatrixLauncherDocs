@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/MatrixLauncher/',
+  base: '/MatrixLauncherDocs/',
   title: 'MatrixLauncher',
   description: '面向 Minecraft 服务器的 Kotlin / Compose Desktop 定制启动器框架',
   cleanUrls: true,
