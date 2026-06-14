@@ -39,5 +39,11 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      # The repository currently also has the legacy branch-based Pages
+      # deployment enabled. Let that deployment finish first so this built
+      # VitePress artifact remains the active deployment.
+      - name: Wait for legacy Pages deployment
+        run: sleep 45
+
       - id: deployment
         uses: actions/deploy-pages@v4
